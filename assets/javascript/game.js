@@ -16,13 +16,9 @@ var computerChoicePlaceholder = [];
 var rightGuesses = [];
 var wrongGuesses = [];
 
-var loseSound = new Audio("path/path/path/");
-var winSound = new Audio("path/path/path/");
-var startGameSound = new Audio ("path/path/path/");
-
-
-
-
+var loseSound = new Audio("/assets/audio/whatthehell.mp3");
+var winSound = new Audio("/assets/audio/bigshot.mp3");
+var startGameSound = new Audio ("/assets/audio/letsroll.mp3");
 
 
 var guessesLeft = 10
@@ -34,15 +30,16 @@ startGameButton.addEventListener('click', function() {
 });
 
 // Array that lists out all of the answers.
-var allSimpsonsList = ["homer","marge", "rod", "lisa", "bart", "todd", "ned", "patty", "selma"];
+var allSimpsonsList = ["homer","marge", "rod", "lisa", "bart", "milhouse", "ned", "abe", "selma"];
 
 
 
 // TODO:
-// - Need to fix code so that if the word is "test" and the user selects "t" that is fills in both t's.
-// - counters for number of ties.
+// Note: Specifically chose names were NO letters were repeated because I couldn't figure out how to make the code account for 2 placeholders w/ the same letter that needed to be updated  :(
+// - counters for number of tries.
 // - handle an incorrect letter guess.
-// - know when all letters have been guessed. WIN!
+// - know when all letters have been guessed. 
+//WIN!
 
 
 function toggleStartGameButton() {

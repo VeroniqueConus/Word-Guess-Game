@@ -1,8 +1,45 @@
 body {
 	background:orange;
-}
+	}
+
+	.header-container {
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		font-size: 26px;
+		padding-top: 20px;
+	}
 
 #placeholderContainer {
-	border: 1px solid green;
+	border:  1px black dashed;
 	display: none;
+	text-align: center;
+	padding-left: 30%;
+	padding-right: 30%;
 }
+
+/* .simpsons-img { */
+/* } */
+
+.startGameButton {
+	background-color: none;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+	 left: 0;
+	right: 0;
+}
+
+.stats {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/* How do I apply this font throughout?! */
+@font-face {
+	font-family: Simpsonfont;
+	src: url(/assets/css/Simpsonfont.ttf);
