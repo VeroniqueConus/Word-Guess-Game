@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Guess Simpsons</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">   
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
 
-<body>
-        <header class="header-container">
-                    <h1>Guess the Simpsons!</h1>
-        </header>
+  <body>
+    <header class="header-container">
+      <h1>Guess the Simpsons!</h1>
+    </header>
 
-        <div class="startGameButton">
-            <button id="startGameButton">Start Game</button>
-        </div>
+    <section class="simpsons-img">
+      <img src="assets/images/simpsons.png" height="289" width="307" class="simpsons-img">
+    
+      <div class="startGameButton">
+        <button id="startGameButton">Start Game</button>
+      </div>
+      <section>
+        <div class="stats">Tries</div>
+        <div class="stats">Left</div>
+      </section>
 
-        <section>
-                <img class="simpsons-img" src="assets/images/simpsons.png" height="289" width="307">
-        </section>
+      <section class="container">
+        <div id="placeholderContainer"></div>
+      </section>
+    </section>
 
-        <section class="container">
-            <div id="placeholderContainer"></div>
-        </section>    
-        
-        <section>
-                <div class="stats">Tries</div>
-                <div class="stats">Left</div>
-        </section>
-
-  <script src="assets/javascript/game.js"></script>
-</container>
-</body>
+    <script src="assets/javascript/game.js"></script>
+  </body>
 </html>
